@@ -8,5 +8,5 @@ const binance = new Binance().options({
   APISECRET: process.env.BINANCE_SECRET,
   userServerTime: true,
 })
-
+binance.futuresChart( 'BTCUSDT', '1m', console.log );
 export default binance
